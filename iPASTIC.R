@@ -128,7 +128,7 @@
 
         ranks_df <- getranks_df(stats_df)
 
-        output <- list(indices = stats_df, ranks = ranks_df,correlations=list(pearson=cor(data.matrix(results$indices[, 2:length(results$indices)])),spearman=cor(data.matrix(results$ranks[, 2:(length(results$ranks) - 3)]))))
+        output <- list(indices = stats_df, ranks = ranks_df,correlations=list(pearson=cor(data.matrix(stats_df[, 2:length(stats_df)])),spearman=cor(data.matrix(ranks_df[, 2:(length(ranks_df) - 3)]))))
         return(output)
     }
 
