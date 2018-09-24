@@ -1,7 +1,7 @@
 How to use iPASTIC in R
 ================================================
 
-STABILITYSOFT calculates the several parametric and non-parametric statistics as defined in STABILITYSOFT: a new online program to calculate parametric and non-parametric stability statistics. Applications in Plant Sciences (submitted).
+iPASTIC calculates the 14 yield-based stress indices as defined in iPASTIC: an online toolkit to calculate plant abiotic stress indices. Journal of Agronomy and Crop Science (submitted).
 
 Step 1: Loading the library
 --------------------------
