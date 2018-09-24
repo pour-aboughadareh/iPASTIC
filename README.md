@@ -760,7 +760,7 @@ ggcorrplot(results$correlations$spearman)
 ```
 ![Spearman correlation heatmap](https://raw.githubusercontent.com/pour-aboughadareh/iPASTIC/master/Screenshot%203.jpg)
 #### 2. Relative frequencies
-##### 1. Choose the indice which you want to make the histogram from.
+##### 1. Choose the indice which you want to make the histogram from
 ```R
 indice <- results$indices$Yp
 ```
