@@ -16,7 +16,8 @@
 ##   3. Print(results$indices)
 ##   4. Print(results$ranks)
 ##   5. Correlation matrixes: out$correlations$pearson and out$correlations$spearman
-##   You can visualize correlation matrixes using tools such as corrplot or ggcorrplot
+##   
+##   Note 1: You can visualize correlation matrixes using tools such as corrplot or ggcorrplot
 ##
 ##########################
 
