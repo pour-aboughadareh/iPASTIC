@@ -150,7 +150,7 @@ Step 2: Loading the data
 After execution, function `Calculate` can be used to get the results.
 It takes a dataframe as input and returns the result as an object containing dataframes `result$indices`, `result$ranks` and correlation matrixes `results$correlations$pearson` and `results$correlations$spearman`.
 
-First, you need to convert your data to a dataframe (given that the data is already like examples provided [here](Examples.zip)).
+First, you need to convert your data to a dataframe (given that the data is already like example provided [here](Example.xlsx)).
 
 ### Option 1: Copy data from your favorite app and get it from clipboard
 
