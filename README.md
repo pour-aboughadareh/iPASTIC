@@ -7,7 +7,8 @@ Step 1: Loading the library
 --------------------------
 To get started, execute the library code ([iPASTIC.R](iPASTIC.R)) in your RStudio console.
 
-```##########################
+```R
+##########################
 ##
 ##   iPASTIC: online plant abiotic stress index calculator. 
 ##   
