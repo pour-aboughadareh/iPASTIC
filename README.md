@@ -750,7 +750,7 @@ install.packages("ggcorrplot")
 ```R
 library("ggcorrplot")
 ```
-##### 3. Plot heatmap the correlation matrixes available in `results` variable (`results$correlations$pearson` and `results$correlations$spearman`)
+##### 3. Plot the heatmap for correlation matrixes available in `results$correlations` variable (`results$correlations$pearson` and `results$correlations$spearman`)
 ```R
 ggcorrplot(results$correlations$pearson)
 ```
