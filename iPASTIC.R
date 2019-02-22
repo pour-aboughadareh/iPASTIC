@@ -1,6 +1,6 @@
 ##########################
 ##   
-##   iPASTIC: online plant abiotic stress index calculator. 
+##   iPASTIC: an online toolkit to calculate plant abiotic stress indices
 ##   
 ##   Authors:
 ##   Alireza Pour-Aboughadareh (a.poraboghadareh@gmail.com)
@@ -18,9 +18,10 @@
 ##   3. Print(results$indices)
 ##   4. Print(results$ranks)
 ##   5. Correlation matrixes: out$correlations$pearson and out$correlations$spearman
-##   6. Principal component analysis results: out$pca
+##   6. Principal component analysis results: out$pca (out$pca$correlation_based and out$pca$covariance_based)
 ##   
 ##   Note 1: You can visualize correlation matrixes using tools such as corrplot or ggcorrplot
+##   Note 2: You can draw biplot for pca results using built-in function biplot or similar third-party libraries
 ##   
 ##########################
 
