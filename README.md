@@ -376,8 +376,8 @@ print(cov_based_pca) # cov_based_pca$eigenvals, cov_based_pca$eigenvecs, cov_bas
 ```R
 biplot(results$pca$correlation_based$pca_obj, scale=0)
 ```
-![Pearson correlation heatmap](https://raw.githubusercontent.com/pour-aboughadareh/iPASTIC/master/Screenshot%205.jpg)
+![Correlation-based PCA Biplot](https://raw.githubusercontent.com/pour-aboughadareh/iPASTIC/master/Screenshot%205.jpg)
 ```R
 biplot(results$pca$covariance_based$pca_obj, scale=0)
 ```
-![Spearman correlation heatmap](https://raw.githubusercontent.com/pour-aboughadareh/iPASTIC/master/Screenshot%206.jpg)
+![Covariance-based PCA Biplot](https://raw.githubusercontent.com/pour-aboughadareh/iPASTIC/master/Screenshot%206.jpg)
