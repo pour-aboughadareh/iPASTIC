@@ -86,7 +86,6 @@
     
     ranks <- cbind(df_orig[1], ranks, SR, AR, STD)
     
-    
     return(ranks)
   }
   
@@ -129,7 +128,6 @@
   {
     genonames<-rownames(df)
     factornames<-colnames(df)
-    
     
     eigenvals<-NULL
     eigenvecs<-NULL
@@ -255,8 +253,7 @@
     rownames(ranks_df) <- ranks_df[,1]
     ranks_df<-ranks_df[,-1]
     
-    output <- list(indices = stats_df, ranks = ranks_df,correlations=list(pearson=cor(data.matrix(stats_df[-4][, 2:length(stats_df[-4])])),spearman=cor(data.matrix(ranks_df[, 2:(length(ranks_df) - 3)]))),pca=list(correlation_based=correlation_based_pca, covariance_based=covariance_based_pca))
+    output <- list(indices = stats_df, ranks = ranks_df,correlations=list(pearson=cor(data.matrix(stats_df[-3][, 1:length(stats_df[-4])])),spearman=cor(data.matrix(ranks_df[, 1:(length(ranks_df) - 3)]))),pca=list(correlation_based=correlation_based_pca, covariance_based=covariance_based_pca))
     return(output)
   }
-  
 })()
