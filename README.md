@@ -363,3 +363,21 @@ h$counts=h$counts/sum(h$counts)
 plot(h,col="#f1a689")
 ```
 ![Histogram for relative frequency](https://raw.githubusercontent.com/pour-aboughadareh/iPASTIC/master/Screenshot%204.jpg)
+#### 3. Principal component analysis
+##### 1. there are `eigenvals` (eigenvalues), `eigenvecs` (eigenvectors), `loadings` (factor loadings), `contributions` (contribution of Variables), `scores` (Factor Scores) and `pca_obj` (actual PCA object used for calculation of results) available for each `correlation_based` and `covariance_based` object inside `pca` object of result.
+Example:
+```R
+cor_based_pca <- results$pca$correlation_based
+print(cor_based_pca) # cor_based_pca$eigenvals, cor_based_pca$eigenvecs, cor_based_pca$loadings, cor_based_pca$contributions, cor_based_pca$scores, cor_based_pca$pca_obj
+cov_based_pca <- results$pca$covariance_based
+print(cov_based_pca) # cov_based_pca$eigenvals, cov_based_pca$eigenvecs, cov_based_pca$loadings, cov_based_pca$contributions, cov_based_pca$scores, cov_based_pca$pca_obj
+```
+##### 2. Draw pca biplot for results
+```R
+biplot(results$pca$correlation_based$pca_obj, scale=0)
+```
+![Pearson correlation heatmap](https://raw.githubusercontent.com/pour-aboughadareh/iPASTIC/master/Screenshot%205.jpg)
+```R
+biplot(results$pca$covariance_based$pca_obj, scale=0)
+```
+![Spearman correlation heatmap](https://raw.githubusercontent.com/pour-aboughadareh/iPASTIC/master/Screenshot%206.jpg)
