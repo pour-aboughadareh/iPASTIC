@@ -209,6 +209,7 @@
     
     return(list(eigenvals = eigenvals, eigenvecs = eigenvecs * signChangingFlags[col(eigenvecs)], loadings = loadings * signChangingFlags[col(loadings)], contributions = contributions[, 1:length(signChangingFlags)], scores = scores, pca_obj=pca ))
   }
+  enablePcaVarCountWarning <- FALSE
   Calculate <<- function(table_original)
   {
     table <- cbind(table_original)[, -1]
@@ -236,11 +237,11 @@
     
     rownames(pcadf)<-stats_df[,1]
     
-    
-    if(ncol(pcadf)>nrow(pcadf))
-    {
-      warning("There are more variables than observations in output for dataset provided for principal component analysis.")
-    }
+      if (enablePcaVarCountWarning)
+        if(ncol(pcadf)>nrow(pcadf))
+        {
+            #warning("There are more variables than observations in output for dataset provided for principal component analysis.")
+        }
     
     correlation_based_pca<-getpca(pcadf,FALSE)
     covariance_based_pca<-getpca(pcadf,TRUE)
