@@ -1,7 +1,7 @@
 How to use iPASTIC in R
 ================================================
 
-iPASTIC calculates the 14 yield-based stress indices as defined in iPASTIC: an online toolkit to calculate plant abiotic stress indices. Applications in Plant Sciences (submitted).
+iPASTIC calculates the 14 yield-based stress indices as defined in [iPASTIC: an online toolkit to calculate plant abiotic stress indices](https://bsapubs.onlinelibrary.wiley.com/doi/10.1002/aps3.11278).
 
 Step 1: Loading the library
 --------------------------
